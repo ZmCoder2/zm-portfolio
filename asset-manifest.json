@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/zm-portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/zm-portfolio/static/js/main.b0e9d141.js",
+    "main.css": "/zm-portfolio/static/css/main.3f950dfc.css",
+    "main.js": "/zm-portfolio/static/js/main.56eb2ab3.js",
     "static/js/453.d22c673f.chunk.js": "/zm-portfolio/static/js/453.d22c673f.chunk.js",
-    "static/media/logo.svg": "/zm-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/night-banner.png": "/zm-portfolio/static/media/night-banner.5424e23f67077f2a38f4.png",
+    "static/media/CentraNo2-Bold.ttf": "/zm-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/zm-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/zm-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "index.html": "/zm-portfolio/index.html",
-    "main.f855e6bc.css.map": "/zm-portfolio/static/css/main.f855e6bc.css.map",
-    "main.b0e9d141.js.map": "/zm-portfolio/static/js/main.b0e9d141.js.map",
+    "main.3f950dfc.css.map": "/zm-portfolio/static/css/main.3f950dfc.css.map",
+    "main.56eb2ab3.js.map": "/zm-portfolio/static/js/main.56eb2ab3.js.map",
     "453.d22c673f.chunk.js.map": "/zm-portfolio/static/js/453.d22c673f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.b0e9d141.js"
+    "static/css/main.3f950dfc.css",
+    "static/js/main.56eb2ab3.js"
   ]
 }
