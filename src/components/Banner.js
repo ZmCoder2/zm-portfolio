@@ -1,6 +1,7 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Container, Row, Col } from "react-bootstrap"
 import TrackVisibility from 'react-on-screen';
+import austronautImg from "../assets/images/astronaut-programmer.png"
 
 
 
@@ -24,7 +25,17 @@ export const Banner = () => {
             <Cursor cursorStyle="|" />
           </span>
         </h1>
+            <p>Hey there, I'm Zackary Miller, but Zack works just fine! I'm a 27-year-old software engineer from Cumming, Georgia, with a passion for continuous learning and pushing the boundaries of technology. Every day, I dive into new coding challenges, explore the latest tech trends, and collaborate with fellow developers. Excited to see where this journey takes me!</p>
         </TrackVisibility>  
+        </Col>
+        <Col xs={12} md={6} xl={5}>
+            <TrackVisibility>
+                {({ isVisible }) => 
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                    <img src={austronautImg} alt="Header Img" />
+                </div>
+                }
+            </TrackVisibility>
         </Col>
         </Row>
       </Container>
