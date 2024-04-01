@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import {Navbar, Container, Nav } from "react-bootstrap"
 import logo from '../assets/images/Zm-logo.jpg'
+import gitHubIcon from '../assets/images/github-icon.svg'
+import linkedInIcon from '../assets/images/linkedin-blue.png'
+
 // import { HashLink } from 'react-router-hash-link';
 // import {
 //   BrowserRouter as Router
@@ -47,13 +50,12 @@ export const NavBar = () => {
             <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>            
           </Nav>
           <span className="navbar-text">
-
             <div className="social-icon">
-              {/* <a href="#"><img src={} alt=""></img></a>
-              <a href="#"><img src={} alt=""></img></a>
-              <a href="#"><img src={} alt=""></img></a> */}
+              <a href="#"><img src={linkedInIcon} alt="LinkedIn Icon"></img></a>
+              <a href="#"><img src={gitHubIcon} alt="Github Icon"></img></a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}><span>Let's Connect!</span></button>
+            {/* dont think I am going to use this button in the navbar but ill keep it here for now just in case */}
+            {/* <button className="vvd" onClick={() => console.log("connect")}><span>Let's Connect!</span></button> */}
           </span>
         </Navbar.Collapse>
       </Container>
