@@ -91,7 +91,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: black;
+  background-image: linear-gradient(to left top, #0c0b0c, #160a16, #1c091e, #200927, #240730, #220834, #200938, #1d0a3c, #150c3a, #0d0d37, #060d33, #010d2f);
 }
 nav.navbar a.navbar-brand {
   width: 9%;
