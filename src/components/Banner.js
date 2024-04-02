@@ -1,6 +1,7 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Container, Row, Col } from "react-bootstrap"
 import TrackVisibility from 'react-on-screen';
+import 'animate.css'
 import austronautImg from "../assets/images/astronaut-programmer.png"
 
 
