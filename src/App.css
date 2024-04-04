@@ -284,9 +284,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: translateY(-20px);
   }
 }
-.txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
-}
+
 
 /* ##### Skills ##### */
 .skills-container {
@@ -339,7 +337,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   object-fit: cover;
 }
-
-/* .item-1 {
-  background-image: url("./assets//images/bootstrap.png");
-} */
