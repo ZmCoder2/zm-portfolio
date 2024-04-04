@@ -323,11 +323,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
-
 .item:hover {
   transform: scale(1.5);
 }
-
 .item .item-info {
   position: absolute;
   top: 50%;
@@ -344,3 +342,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #C9B2E4;
   margin: 0;
 }
+
+/* ##### Projects ##### */
