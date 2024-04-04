@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
+// import Carousel from "react-multi-carousel"; may use this but just gonna keep it how it is
 import bootstrapImg from "../assets/images/bootstrap.png";
 import cssImg from "../assets/images/css.png";
 import javascriptImage from "../assets/images/Js.png";
@@ -9,72 +11,43 @@ import reactImg from "../assets/images/react.png";
 import sassImg from "../assets/images/sass.png";
 
 export const Skills = () => {
+    const responsive = {
+        largerDesktop: {
+            breakpoint: { max: 4000, min: 3000},
+            items: 5 
+        },
+        pc: {
+            breakpoin: { max: 3000, min: 1024 },
+            items: 3
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        phone: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
+
   return (
     <section className="skill" id="skills">
       <div className="skills-container">
         <Row className="row">
           <Col className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <p>Here are some of my top skills:</p>
+              <h2 className="skills-header">Skills</h2>
+              <p className="skills-text">Here are some of my top skills:</p>
               <div className="wrapper">
                 <div className="items">
-                  <div className="item" tabIndex={0} style={{ backgroundImage: `url(${bootstrapImg})`, width: '100px', height: '100px', filter: 'none' }}>
-                    <div className="overlay">
-                      <div className="item-info">
-                        <h3>Bootstrap</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item" tabIndex={0} style={{ backgroundImage: `url(${cssImg})`, width: '100px', height: '100px', filter: 'none' }}>
-                    <div className="overlay">
-                      <div className="item-info">
-                        <h3>CSS</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item" tabIndex={0} style={{ backgroundImage: `url(${javascriptImage})`, width: '100px', height: '100px', filter: 'none' }}>
-                    <div className="overlay">
-                      <div className="item-info">
-                        <h3>JavaScript</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item" tabIndex={0} style={{ backgroundImage: `url(${mongodbImg})`, width: '100px', height: '100px', filter: 'none' }}>
-                    <div className="overlay">
-                      <div className="item-info">
-                        <h3>MongoDB</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item" tabIndex={0} style={{ backgroundImage: `url(${nodeImg})`, width: '100px', height: '100px', filter: 'none' }}>
-                    <div className="overlay">
-                      <div className="item-info">
-                        <h3>Node.js</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item" tabIndex={0} style={{ backgroundImage:`url(${pythonImg})`, width: '100px', height: '100px', filter: 'none' }}>
-                    <div className="overlay">
-                      <div className="item-info">
-                        <h3>Python</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item" tabIndex={0} style={{ backgroundImage: `url(${reactImg})`, width: '100px', height: '100px', filter: 'none' }}>
-                    <div className="overlay">
-                      <div className="item-info">
-                        <h3>React.js</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item" tabIndex={0} style={{ backgroundImage: `url(${sassImg})`, width: '100px', height: '100px', filter: 'none' }}>
-                    <div className="overlay">
-                      <div className="item-info">
-                        <h3>Sass</h3>
-                      </div>
-                    </div>
-                  </div>
+                  <SkillItem src={bootstrapImg} title="Bootstrap" />
+                  <SkillItem src={cssImg} title="CSS" />
+                  <SkillItem src={javascriptImage} title="JavaScript" />
+                  <SkillItem src={mongodbImg} title="MongoDB" />
+                  <SkillItem src={nodeImg} title="Node.js" />
+                  <SkillItem src={pythonImg} title="Python" />
+                  <SkillItem src={reactImg} title="React.js" />
+                  <SkillItem src={sassImg} title="Sass" />
                 </div>
               </div>
             </div>
@@ -82,5 +55,17 @@ export const Skills = () => {
         </Row>
       </div>
     </section>
+  );
+};
+
+const SkillItem = ({ src, title }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div className="item" tabIndex={0} style={{ backgroundImage: `url(${src})`, width: '100px', height: '100px', filter: 'none' }} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+      <div className="item-info">
+        {isHovered && <h3 className="item-title">{title}</h3>}
+      </div>
+    </div>
   );
 };
